@@ -1,0 +1,16 @@
+﻿{
+  "Name": "ACME System 1",
+  "Description": "Uipath site for testing\r\n",
+  "Type": "App",
+  "Id": "O6p32WgkSEqWdLshNmP0Vw",
+  "Reference": "Dhx5xsMMpU20_pn3ok54tA/O6p32WgkSEqWdLshNmP0Vw",
+  "Created": "2024-05-21T01:10:14.9244491Z",
+  "Updated": "2024-05-21T01:10:50.8264403Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.4.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
