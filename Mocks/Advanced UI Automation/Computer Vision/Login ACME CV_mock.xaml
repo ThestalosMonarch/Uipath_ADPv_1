@@ -41,14 +41,6 @@
       <x:String>UiPath.UIAutomationNext.Models</x:String>
       <x:String>UiPath.UIAutomationNext.Activities</x:String>
       <x:String>UiPath.Platform.ObjectLibrary</x:String>
-      <x:String>CredentialManagement</x:String>
-      <x:String>UiPath.Credentials.Activities</x:String>
-      <x:String>UiPath.Vision.OCR</x:String>
-      <x:String>UiPath.OCR.Contracts</x:String>
-      <x:String>UiPath.OCR.Activities</x:String>
-      <x:String>UiPath.OCR.Contracts.Activities</x:String>
-      <x:String>System.ComponentModel</x:String>
-      <x:String>System.Xml.Serialization</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -113,29 +105,16 @@
       <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
-      <AssemblyReference>netstandard</AssemblyReference>
-      <AssemblyReference>CredentialManagement</AssemblyReference>
-      <AssemblyReference>UiPath.Credentials.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
-      <AssemblyReference>PresentationFramework</AssemblyReference>
-      <AssemblyReference>WindowsBase</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
-      <AssemblyReference>System.Private.Xml</AssemblyReference>
-      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Login_ACME_CV" sap:VirtualizedContainerService.HintSize="416,282" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Username" />
       <Variable x:TypeArguments="ss:SecureString" Name="Password" />
-      <Variable x:TypeArguments="x:String" Name="PasswordString">
-        <Variable.Default>
-          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="new System.Net.NetworkCredential(string.Empty, Password).Password" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:String" Default="[new System.Net.NetworkCredential(string.Empty, Password).Password]" Name="PasswordString" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -178,7 +157,7 @@
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Boolean" Name="PopUp" />
             </Sequence.Variables>
-            <p1:CvTypeIntoWithDescriptor DelayScreenshotAfterScroll="{x:Null}" DeselectAfter="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" Descriptor="[&quot;Target: InputBox (323,417,664,55)&quot; +&#xD;&#xA;&quot;Anchor: Text 'Username' (325,391,60,11)&quot;]" DesignTimeCacheId="9fd273d7-82f3-4016-b281-f7745e2250a9" DesignTimeScaleFactor="1" DisplayName="CV Type Into - InputBox" EmptyField="True" sap:VirtualizedContainerService.HintSize="450,217" sap2010:WorkflowViewState.IdRef="CvTypeIntoWithDescriptor_3" InformativeScreenshot="bb16daf12f5fd185cb54223b05e23598" NumberOfScrolls="2" ScrollDirection="None" Text="[Username]" Version="V6">
+            <p1:CvTypeIntoWithDescriptor DelayScreenshotAfterScroll="{x:Null}" DeselectAfter="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" Descriptor="[&quot;Target: InputBox (323,417,664,55)&quot; +&#xA;&quot;Anchor: Text 'Username' (325,391,60,11)&quot;]" DesignTimeCacheId="9fd273d7-82f3-4016-b281-f7745e2250a9" DesignTimeScaleFactor="1" DisplayName="CV Type Into - InputBox" EmptyField="True" sap:VirtualizedContainerService.HintSize="450,217" sap2010:WorkflowViewState.IdRef="CvTypeIntoWithDescriptor_3" InformativeScreenshot="bb16daf12f5fd185cb54223b05e23598" NumberOfScrolls="2" ScrollDirection="None" Text="[Username]" Version="V6">
               <p1:CvTypeIntoWithDescriptor.DesignTimeDescriptor>
                 <uc:CvDescriptor Id="17853bf8-57a4-41be-b320-07777be0d5a1">
                   <uc:CvDescriptor.Anchors>
@@ -202,7 +181,7 @@
                 </ui:Target>
               </p1:CvTypeIntoWithDescriptor.Target>
             </p1:CvTypeIntoWithDescriptor>
-            <p1:CvTypeIntoWithDescriptor DelayScreenshotAfterScroll="{x:Null}" DeselectAfter="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" Descriptor="[&quot;Target: InputBox (325,529,663,54)&quot; +&#xD;&#xA;&quot;Anchor: Text 'Password' (325,503,56,11)&quot;]" DesignTimeCacheId="9fd273d7-82f3-4016-b281-f7745e2250a9" DesignTimeScaleFactor="1" DisplayName="CV Type Into - InputBox" EmptyField="True" sap:VirtualizedContainerService.HintSize="450,217" sap2010:WorkflowViewState.IdRef="CvTypeIntoWithDescriptor_4" InformativeScreenshot="986d8e8a1a24dc02e53d03148c2a05ac" NumberOfScrolls="2" ScrollDirection="None" Text="[Password]" Version="V6">
+            <p1:CvTypeIntoWithDescriptor DelayScreenshotAfterScroll="{x:Null}" DeselectAfter="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" Descriptor="[&quot;Target: InputBox (325,529,663,54)&quot; +&#xA;&quot;Anchor: Text 'Password' (325,503,56,11)&quot;]" DesignTimeCacheId="9fd273d7-82f3-4016-b281-f7745e2250a9" DesignTimeScaleFactor="1" DisplayName="CV Type Into - InputBox" EmptyField="True" sap:VirtualizedContainerService.HintSize="450,217" sap2010:WorkflowViewState.IdRef="CvTypeIntoWithDescriptor_4" InformativeScreenshot="986d8e8a1a24dc02e53d03148c2a05ac" NumberOfScrolls="2" ScrollDirection="None" Text="[Password]" Version="V6">
               <p1:CvTypeIntoWithDescriptor.DesignTimeDescriptor>
                 <uc:CvDescriptor Id="cf317a7b-b0d6-4d35-8cb5-a846bae0b1e2">
                   <uc:CvDescriptor.Anchors>
@@ -316,6 +295,9 @@
           </Sequence>
         </ActivityAction>
       </p1:CVScope.Body>
+      <p1:CVScope.DesignTimeCache>
+        <uc:CVCache CvUiElements="{x:Null}" OcrTexts="{x:Null}" DataSent="False" />
+      </p1:CVScope.DesignTimeCache>
       <p1:CVScope.DesignTimeCacheContainer>
         <uc:CvCacheContainer>
           <uc:CvCacheContainer.Caches>

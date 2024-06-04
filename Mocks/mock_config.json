@@ -1,0 +1,8 @@
+{
+  "mockedWorkflows": [
+    {
+      "mockFilePath": "Mocks\\Advanced UI Automation\\Computer Vision\\Login ACME CV_mock.xaml",
+      "sourceWorkflowPath": "Advanced UI Automation\\Computer Vision\\Login ACME CV.xaml"
+    }
+  ]
+}
