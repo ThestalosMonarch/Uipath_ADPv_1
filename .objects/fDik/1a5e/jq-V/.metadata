@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Login ACME System",
+  "Type": "Screen",
+  "Id": "jq-VL-RHt0SMEGahfIg9tQ",
+  "Reference": "6m_d4XehaECYEFexHGK4Fg/jq-VL-RHt0SMEGahfIg9tQ",
+  "ParentRef": "6m_d4XehaECYEFexHGK4Fg/1a5ePiWtmEylKhdBIIGGdA",
+  "Created": "2024-06-05T19:25:24.4428843Z",
+  "Updated": "2024-06-05T19:25:24.4428843Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.4.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

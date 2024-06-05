@@ -1,0 +1,11 @@
+﻿{
+  "Name": "ACME System",
+  "Type": "App",
+  "Id": "fDikZPkNukiOW8GG4Ne9IQ",
+  "Reference": "6m_d4XehaECYEFexHGK4Fg/fDikZPkNukiOW8GG4Ne9IQ",
+  "Created": "2024-06-05T19:24:43.3742639Z",
+  "Updated": "2024-06-05T19:24:43.3742639Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

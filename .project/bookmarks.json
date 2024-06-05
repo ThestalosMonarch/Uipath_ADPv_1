@@ -1,0 +1,15 @@
+{
+  "Value": {
+    "Debugging/Test Activities.xaml": [
+      {
+        "IsEnabled": true,
+        "Annotation": "\"Testing bookmark\"",
+        "Id": "f8d4f6fe-2eec-468c-8795-8fc062f2f99d",
+        "ActivityIdRef": "InvokeWorkflowFile_1",
+        "ActivityId": "1.51",
+        "ActivityName": "Debugging\\fake workflow.xaml - Invoke Workflow File",
+        "IsTransient": false
+      }
+    ]
+  }
+}
